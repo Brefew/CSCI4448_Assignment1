@@ -21,7 +21,7 @@ class DVD extends Media
 			if((d.getTitle()).compareTo(d2.getTitle()) > 0) {
 				return 1;
 			}
-			else if ((d.getTitle()).compareTo(d2.getTitle()) > 0) {
+			else if ((d.getTitle()).compareTo(d2.getTitle()) == 0) {
 				return (d.getYear() - d2.getYear());
 			}
 			else {
@@ -29,7 +29,7 @@ class DVD extends Media
 			}
 		}
 		else {
-			return (this.getSortKey()).compareTo(media.getSortKey());
+			return -1;
 		}
 	}
 }
