@@ -1,0 +1,27 @@
+1) Implements Comparable should be at the top of the Abstract Media file. It should be done at the superclass level.
+
+2) Yes, because the interface is a group of related methods with empty bodies that define's behavior. To impliment the interface, the class must specify the implimentation and the methods must be defined. 
+
+3) you can use the command, if(object instanceOf class) to check
+
+4) No, you cannot. This would violate encapsulation. One shouldn't be able to bypass the parent class's behavior. One can only call the super method from inside an overridden method.  
+
+5) A subclass object cannot access private variables of any super class.
+
+6) In this method, you convert the 'this' object and the compared Media object into a class type, such as DVD, and can compare with:
+   obj1.getTitle().compareTo.obj2.getTitle()
+
+7) It would print out Book/DVD
+
+8) My solution remains intact, because the Abstract class was not altered in accordance with good OOP practices. Therefore, a new Media type could be added without altering or changing the other classes. 
+
+9) Abstraction: "The process of hiding the implementation details from the user, only the functionality will be provided to the user" -from the reading
+
+   Encapsulation: "Putting together all the variables and methods into a single unit called a class -- hiding data and methods within an object. It provides security that keeps data and methods safe from inadvertent changes" -from reading
+
+   Cohesion: "Refers to how related the elements in a class/module/framework are" -from lecture slides
+ 
+   Coupling: "Refers to how strongly related two or more classes (etc) are" -lecture slides
+
+   Abstraction allows for the reuse of code or shared methods between common objects. For example, an Abstract animal class can contain some common methods of all animals, but branch off sub classes that hold unique methods of their own. 
+   Encapsulation 
